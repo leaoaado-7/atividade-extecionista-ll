@@ -75,10 +75,31 @@ header{
 
 
 
-a.externo::after {
 
-content: ' \00a0\1F517';
+#zap{
+    z-index: 01;
+bottom: 60px;
+right: 30px;
+border-radius: 100%;
+width: 60px;
+text-align: center;
+position: fixed;
+
 }
+
+#plant{
+    background-color: #06361b;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#plant:hover{
+    background-color: #00ff6a;
+    
+}
+
 
 main strong {
 
@@ -101,12 +122,15 @@ main a :hover{
      color: #046e34;
 }
 
-nav{
+li{
     background-color: #063d1e;
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
+    border: solid rgba(0, 0, 0, 0.726) ;
+    border-width: 1px;
 
 }
+
 
 main{
     background-color: white;
@@ -149,7 +173,7 @@ main{
 
     aside {
 
-        background-color: #2fa866;
+        background-color: #00ff6a;
         padding: 10px;
         border-radius: 10px;
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.589);
@@ -191,20 +215,21 @@ aside h3 {
         padding: 0px;
     }
     
-    nav >a {
+    li >a {
         color: #c5ebd6;
         padding: 10px;
         text-decoration: none;
         font-weight: bold;
+        width: 500px;
          
 
     }
 
 
-    nav > a:hover {
+    li > a:hover {
         background-color: #0ba74f;
         color: black;
-        transition-duration: .  5s;
+        transition-duration:  5s;
     }
     
     .verde{
@@ -220,4 +245,8 @@ aside h3 {
         .zap{
 
             background-color: white;
+        }
+
+        menu {
+            display: none;
         }
